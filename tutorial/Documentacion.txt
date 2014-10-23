@@ -1,0 +1,31 @@
+Tutorial 1: Serialization
+
+Se crea el entorno virtual:
+	virtualenv env
+	source env/bin/activate
+
+Se instalan los paquetes necesarios:
+	pip install django
+	pip install djangorestframework
+	pip install pygments  # Permite resaltar la sintaxis en python
+
+Se crea el proyecto tutorial:
+	cd ~
+	django-admin.py startproject tutorial
+	cd tutorial
+
+Creamos nuestra primera aplicacion dentro del proyecto:
+	python manage.py startapp snippets
+
+Se agregan las dependencias dentro del proyecto:
+	INSTALLED_APPS = (
+    	...
+    	'rest_framework',
+    	'snippets',
+	)
+
+Agregamos la url:
+	url(r'^', include('snippets.urls')),
+
+Para usar django desde la linea de comandos:
+	python manage.py shell
