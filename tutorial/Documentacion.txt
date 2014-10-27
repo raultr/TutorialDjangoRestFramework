@@ -29,3 +29,22 @@ Agregamos la url:
 
 Para usar django desde la linea de comandos:
 	python manage.py shell
+
+Para realizar peticiones http desde la linea de comandos:
+	Linux:
+		pip install pycurl
+	
+	Whindows:
+		Se instala desde un ejecutable, se puede bajar en:
+
+Para agregarle datos al modelo:
+	from snippets.models import Snippet
+	from snippets.serializers import SnippetSerializer
+	from rest_framework.renderers import JSONRenderer
+	from rest_framework.parsers import JSONParser
+
+	snippet = Snippet(code='foo = "bar"\n')
+	snippet.save()
+
+	snippet = Snippet(code='print "hello, world"\n')
+	snippet.save()
