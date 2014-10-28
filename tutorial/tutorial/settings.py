@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'snippets',
     'request_response',
     'class_base_view',
+    'authentication',
 )
 
 MIDDLEWARE_CLASSES = (

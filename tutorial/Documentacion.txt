@@ -39,8 +39,8 @@ Para realizar peticiones http desde la linea de comandos:
 
 Para agregarle datos al modelo:
 	Desde python manage.py shell:
-		from snippets.models import Snippet
-		from snippets.serializers import SnippetSerializer
+		from authentication.models import Snippet
+		from authentication.serializers import SnippetSerializer
 		from rest_framework.renderers import JSONRenderer
 		from rest_framework.parsers import JSONParser
 
