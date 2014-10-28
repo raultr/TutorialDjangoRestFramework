@@ -1,6 +1,5 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from django.conf.urls import include
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
@@ -10,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^', include('class_base_view_mixins.urls')),
     url(r'^', include('authentication.urls')),
     url(r'^', include('hyperlinked.urls')),
+    url(r'^', include('viewsets.urls')),
 )
 
 

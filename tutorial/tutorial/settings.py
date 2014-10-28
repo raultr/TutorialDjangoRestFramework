@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'class_base_view',
     'authentication',
     'hyperlinked',
+    'viewsets',
 )
 
 MIDDLEWARE_CLASSES = (
