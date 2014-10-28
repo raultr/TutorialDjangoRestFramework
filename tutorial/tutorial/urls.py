@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     url(r'^', include('class_base_view.urls')),
     url(r'^', include('class_base_view_mixins.urls')),
     url(r'^', include('authentication.urls')),
+    url(r'^', include('hyperlinked.urls')),
 )
 
 

@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'request_response',
     'class_base_view',
     'authentication',
+    'hyperlinked',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,3 +87,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#Para poner cuantos registros por defecto se mostraran en cada pagina
+#REST_FRAMEWORK = {
+#    'PAGINATE_BY': 3
+#}
